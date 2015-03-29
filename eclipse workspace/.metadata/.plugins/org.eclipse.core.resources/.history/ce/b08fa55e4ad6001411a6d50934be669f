@@ -20,7 +20,7 @@ public class Binary{
 		String decimalToBinary = Integer.toBinaryString(decimal);
 		System.out.println(decimalToBinary);
 		
-		//  
+		
 		while (decimalToBinary.length() < 32)
 			decimalToBinary = "0" + decimalToBinary;
 		System.out.println(decimalToBinary);
