@@ -5,7 +5,7 @@ public class Binary{
 		String binary = "01111111111111111111111111111111";
 		// there are                     2147483648 different combinations which include zero so  
 		// the decimal number goes up to 2147483647.
-		// the first bit is excluded and used ("signed") to determine if 
+		// the first bit is excluded and used (signed) to determine if 
 		// its a positive decimal or negative.
 		System.out.println(Integer.parseInt(binary,2));
 		System.out.println(Integer.MAX_VALUE);
