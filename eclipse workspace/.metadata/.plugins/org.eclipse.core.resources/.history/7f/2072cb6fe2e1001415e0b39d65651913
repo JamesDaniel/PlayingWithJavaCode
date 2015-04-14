@@ -1,0 +1,28 @@
+package main;
+
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class WebPageGetting {
+
+	public static void main(String[] args) {
+		final int HTTP_PORT = 80;
+		InputStream instream = null;
+		try 
+		{
+			Socket s = new Socket("horstmann.com", HTTP_PORT);
+			instream = s.getInputStream();
+			OutputStream outstream = s.getOutputStream();
+			s.close();
+		} 
+		catch (Exception ex) 
+		{
+
+		}
+		Scanner in = new Scanner(instream);
+
+	}
+
+}
